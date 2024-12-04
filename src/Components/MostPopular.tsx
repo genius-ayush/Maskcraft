@@ -15,25 +15,25 @@ function MostPopular() {
       </div>
       <div className="flex flex-wrap gap-8 justify-center pb-10">
         <Card
-          imageUrl="./public/store/shop/p1/img1.jpg"
+          imageUrl="/public/store/shop/p1/img1.jpg"
           productName="Yellow Mask"
           price="$5.00"
           onClick={() => handleCardClick(1)}
         />
         <Card
-          imageUrl="./public/store/shop/p5/img1.jpg"
+          imageUrl="/public/store/shop/p5/img1.jpg"
           productName="Black Mask"
           price="$3.00"
           onClick={() => handleCardClick(5)}
         />
         <Card
-          imageUrl="./public/store/shop/p3/img1.jpg"
+          imageUrl="/public/store/shop/p3/img1.jpg"
           productName="Maroon Mask"
           price="$2.00"
           onClick={() => handleCardClick(3)}
         />
         <Card
-          imageUrl="./public/store/shop/p12/img1.jpg"
+          imageUrl="/public/store/shop/p12/img1.jpg"
           productName="Light Color Mask"
           price="$10.00"
           onClick={() => handleCardClick(12)}
