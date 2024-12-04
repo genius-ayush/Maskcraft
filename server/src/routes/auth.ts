@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import {User } from '../db';
-import {authenticateJwt , SECRET}from '../middleware/'; 
+import {authenticateJwt , SECRET}from '../middleware'; 
 
 const router = Router();
 
