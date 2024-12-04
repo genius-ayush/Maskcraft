@@ -9,6 +9,14 @@ const port: number = 3000;
 
 app.use(cors());
 
+app.use(cors(
+    {
+        origin: ["https://maskcraft.vercel.app/"] , 
+        methods : ["POST" , "GET"] , 
+        credentials : true 
+    }
+))
+
 app.use(express.json());
 app.use('/auth', authRoutes);
 
