@@ -1,3 +1,4 @@
+
 function Cart() {
   return (
     <div>
@@ -6,7 +7,7 @@ function Cart() {
         <div className="px-6 py-4 flex space-x-10">
           <div className=" mb-2">
             <img
-              src="./public/store/shop/p2/img1.jpg"
+              src="/store/shop/p2/img1.jpg"
               className="h-24"
               alt=""
             />

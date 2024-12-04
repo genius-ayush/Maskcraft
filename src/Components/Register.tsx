@@ -9,7 +9,7 @@ function Register() {
   const [email , setEmail] = useState("") ; 
   const [password , setPassword] = useState("") ; 
   const [error , setError] = useState("") ; 
-  const navigate = useNavigate() ; 
+  const navigate = useNavigate() ;  
 
   const handleSubmit = async(event: React.FormEvent<HTMLFormElement>)=>{
     event.preventDefault() ; 
@@ -23,10 +23,12 @@ function Register() {
       })
 
       let data = response.data ; 
-
+      console.log(data) ; 
       if(data && data.token){
         localStorage.setItem("token" , data.token)
+        localStorage.setItem("team" , data.team) ; 
         navigate("/landing") ;
+        window.location.reload();
       }
 
     }catch(err){

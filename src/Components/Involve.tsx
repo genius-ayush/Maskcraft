@@ -1,5 +1,4 @@
 import ScrollCarousel from 'scroll-carousel';
-// { <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scroll-carousel@1.2.7/dist/scroll.carousel.min.css" /> }
 
 function Involve() {
   new ScrollCarousel(".my-carousel", {
@@ -10,7 +9,6 @@ function Involve() {
     
     <div className='p-5'>
       <div className="font-mono text-3xl font-medium flex items-center justify-center p-8 mt-9">Tag Us on Your Daily Cruise #MaskCraft</div>
-      {/* <div style={{ backgroundColor: 'black' }} className=" h-1/2 pl-3 pr-3 flex flex-wrap gap-3 p-3"> */}  
         <div className="bg-black my-carousel flex p-3 gap-2">
           <div>
           <img src="/store/involve/images (1).jpeg" alt=""  className='h-50'/>

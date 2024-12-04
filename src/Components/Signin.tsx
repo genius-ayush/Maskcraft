@@ -19,8 +19,11 @@ const SignIn: React.FC = () => {
       let data = response.data ; 
 
       if(data && data.token){
+        console.log(data) ; 
         localStorage.setItem("token" , data.token)
+        localStorage.setItem("team" , data.team) ; 
         navigate("/landing") ; 
+        window.location.reload();
       }
     }catch(err){
       setError("Login failed . Please try again." )

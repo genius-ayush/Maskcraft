@@ -15,12 +15,12 @@ export const authenticateJwt = (
         return res.sendStatus(403);
       }
 
-      if(!payload){
-        return res.sendStatus(403) ; 
+      if (!payload) {
+        return res.sendStatus(403);
       }
 
-      if(typeof payload === "string"){
-        return res.sendStatus(403) ;
+      if (typeof payload === "string") {
+        return res.sendStatus(403);
       }
       req.headers["userId"] = payload.id;
       next();

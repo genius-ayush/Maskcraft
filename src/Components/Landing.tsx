@@ -1,19 +1,23 @@
 
 
+import Fanpage from './Fanpage'
 import Hero from './Hero'
 import MostPopular from './MostPopular'
-import OurMasks from './OurMasks'
-import NewArrivals from './NewArrivals'
-import Involve from './Involve'
+// import OurMasks from './OurMasks'
+// import NewArrivals from './NewArrivals'
+// import Involve from './Involve'
+
 function Landing() {
+
   return (
-    <div>
-        
+    <div className=''>
+      <Fanpage/>
       <Hero/>
       <MostPopular/>
-      <NewArrivals/>
-      <OurMasks/>
-      <Involve/>
+      {/* <NewArrivals/> */}
+      {/* <OurMasks/>
+      <Involve/> */}
+      
     </div>
   )
 }

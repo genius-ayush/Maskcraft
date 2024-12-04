@@ -3,6 +3,7 @@ function Sidebar() {
   const navigate = useNavigate();
   function logout() {
     localStorage.removeItem("token");
+    localStorage.removeItem("team") ;
     window.location.href = "/signin";
   }
   return (
